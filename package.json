@@ -6,16 +6,20 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
-  "engines": {
-  	"node": "9.5.0",
-  	"npm": "5.7.1"
-  }
+
+  
   "dependencies": {
     "react": "15.4.2",
     "react-native": "0.41.2",
     "react-native-camera": "^0.6.0",
     "react-navigation": "^2.9.0"
   },
+
+  "engines": {
+  	"node": "9.5.0",
+  	"npm": "5.7.1"
+  },
+  
   "devDependencies": {
     "babel-jest": "18.0.0",
     "babel-preset-react-native": "1.9.1",
