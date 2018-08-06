@@ -7,6 +7,13 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+<<<<<<< HEAD
+=======
+  "engines": {
+  	"node": "9.5.0",
+  	"npm": "5.7.1"
+  },
+>>>>>>> bbf7bf9eae8b847c6620ebcf7d15c0ee32dbc661
   "dependencies": {
     "react": "15.4.2",
     "react-native": "0.41.2",
