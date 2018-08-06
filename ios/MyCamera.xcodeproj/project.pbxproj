@@ -260,6 +260,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* MyCamera-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyCamera-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* MyCamera-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyCamera-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E00B632118450D00329CF3 /* MyCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MyCamera.entitlements; path = MyCamera/MyCamera.entitlements; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		632AA4584E014684B5F701A8 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -400,6 +401,7 @@
 		13B07FAE1A68108700A75B9A /* MyCamera */ = {
 			isa = PBXGroup;
 			children = (
+				41E00B632118450D00329CF3 /* MyCamera.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -432,6 +434,13 @@
 				E1AA371EF8664E4383983E18 /* libRCTCamera.a */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		41E00B642118450E00329CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -488,6 +497,7 @@
 				00E356EF1AD99517003FC87E /* MyCameraTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				41473D5921008D3F00B92B85 /* Recovered References */,
+				41E00B642118450E00329CF3 /* Frameworks */,
 			);
 			indentWidth = 3;
 			sourceTree = "<group>";
@@ -602,7 +612,12 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = J4X2BS3C4F;
+						DevelopmentTeam = R2CY6246BB;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1054,7 +1069,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = J4X2BS3C4F;
+				DEVELOPMENT_TEAM = R2CY6246BB;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1062,7 +1077,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MyCamera123110107893;
 				PRODUCT_NAME = MyCamera;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1073,7 +1088,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4X2BS3C4F;
+				DEVELOPMENT_TEAM = R2CY6246BB;
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1081,7 +1096,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.MyCamera123110107893;
 				PRODUCT_NAME = MyCamera;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
